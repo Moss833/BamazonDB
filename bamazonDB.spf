@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>bamazon_db</string>
+			<key>host</key>
+			<string>localhost</string>
+			<key>name</key>
+			<string>localhost</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>socket</key>
+			<string>/Applications/MAMP/tmp/mysql/mysql.sock</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPSocketConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJX
+			TlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAF
+			gAdUdHlwZVRyb3dzXxAdU2VsZWN0aW9uRGV0YWlsVHlwZU5TSW5k
+			ZXhTZXTSFwsYGVxOU1JhbmdlQ291bnQQAIAG0hscHR5aJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1pOU0luZGV4U2V0oh8gWk5TSW5kZXhTZXRY
+			TlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVk
+			QXJjaGl2ZXLRJidUZGF0YYABAAgAEQAaACMALQAyADcAQABGAE0A
+			VQBgAGcAagBsAG4AcQBzAHUAdwB8AIEAoQCmALMAtQC3ALwAxwDQ
+			ANsA3gDpAPIA9wEEAQcBGQEcASEAAAAAAAACAQAAAAAAAAAoAAAA
+			AAAAAAAAAAAAAAABIw==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {694, 450}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>USE bamazon_DB;
+DROP TABLE if exists Products;
+
+
+CREATE TABLE Products (
+    item_id int AUTO_INCREMENT,
+    product_name VARCHAR(50) NOT NULL,
+    department_name VARCHAR(50) NOT NULL,
+    price VARCHAR(30) NOT NULL,
+    stock_quantity int NOT NULL,
+    PRIMARY KEY(item_id)
+);
+describe Products;
+
+select * from Products; 
+
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("Alexa Echo Dot", "Electronics", 39.99, 60);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("PlayStation 4 Controller", "Electronics", 46.95, 91);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("Apple Magic Keyboard", "Electronics", 129.99, 43);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("HTML &amp; CSS Book", "Books", 23.69, 30);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("The Adventures of Tom Sawyer", "Books", 6.89, 79);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("Django Unchained DVD", "Movies", 4.99, 32);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("Nike hat", "Clothing &amp; Accessories", 19.99, 40);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("Digital Alarm Clock", "Home &amp; Office", 14.99, 59);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("George Carlin poster", "Home &amp; Office", 19.99, 45);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("ACDC shirt", "Clothing &amp; Accessories", 13.98, 73);
+
+select * from Products;</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>USE bamazon_DB;
+DROP TABLE if exists Products;
+CREATE TABLE Products (
+    item_id int AUTO_INCREMENT,
+    product_name VARCHAR(50) NOT NULL,
+    department_name VARCHAR(50) NOT NULL,
+    price VARCHAR(30) NOT NULL,
+    stock_quantity int NOT NULL,
+    PRIMARY KEY(item_id)
+);
+describe Products;
+select * from Products;
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("Alexa Echo Dot", "Electronics", 39.99, 60);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("PlayStation 4 Controller", "Electronics", 46.95, 91);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("Apple Magic Keyboard", "Electronics", 129.99, 43);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("HTML &amp; CSS Book", "Books", 23.69, 30);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("The Adventures of Tom Sawyer", "Books", 6.89, 79);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("Django Unchained DVD", "Movies", 4.99, 32);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("Nike hat", "Clothing &amp; Accessories", 19.99, 40);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("Digital Alarm Clock", "Home &amp; Office", 14.99, 59);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("George Carlin poster", "Home &amp; Office", 19.99, 45);
+INSERT INTO Products (product_name, department_name, price, stock_Quantity) VALUES ("ACDC shirt", "Clothing &amp; Accessories", 13.98, 73);
+select * from Products</string>
+		<string>USE bamazon_DB;
+DROP TABLE if exists Products;
+CREATE TABLE Products (
+    item_id int AUTO_INCREMENT,
+    product_name VARCHAR(50) NOT NULL,
+    department_name VARCHAR(50) NOT NULL,
+    price VARCHAR(30) NOT NULL,
+    stock_quantity int NOT NULL,
+    PRIMARY KEY(ItemID)
+)</string>
+		<string>USE bamazon_DB;
+DROP TABLE Products if exists,
+
+
+CREATE TABLE Products (
+    item_id int AUTO_INCREMENT,
+    product_name VARCHAR(50) NOT NULL,
+    department_name VARCHAR(50) NOT NULL,
+    price VARCHAR(30) NOT NULL,
+    stock_quantity int NOT NULL,
+    PRIMARY KEY(ItemID)
+)</string>
+		<string>DROP TABLE Products if exists,
+USE bamazon_DB</string>
+		<string>USE bamazon_DB;
+CREATE TABLE Products (
+    item_id int AUTO_INCREMENT,
+    product_name VARCHAR(50) NOT NULL,
+    department_name VARCHAR(50) NOT NULL,
+    price VARCHAR(30) NOT NULL,
+    stock_quantity int NOT NULL,
+    PRIMARY KEY(ItemID)
+)</string>
+		<string>USE animals_db;
+UPDATE people
+SET pet_age = 69
+WHERE name = 'Sean';
+SELECT * FROM people</string>
+		<string>USE animals_db;
+UPDATE people
+SET pet_name = "Wilfred", pet_age = 5
+WHERE name = 'Eric';
+SELECT * FROM people</string>
+		<string>USE animals_db;
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ('DUSTIN', true, 'Echo', 4);
+SELECT * FROM people</string>
+		<string>USE animals_db;
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ('DUSTIN', true, 'Echo', 4)
+
+SELECT * FROM people</string>
+		<string>INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ('DUSTIN', true, 'Echo', 4)
+
+SELECT * FROM people</string>
+		<string>USE animals_db;
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ('DUSTIN', true, 'Echo', 4)
+
+
+SELECT * FROM people</string>
+		<string>INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ('DUSTIN', true, 'Echo', 4)
+
+
+SELECT * FROM people</string>
+		<string>USE animals_db;
+UPDATE people
+SET pet_name = 'Coda'
+WHERE name = 'Sean';
+SELECT * FROM people</string>
+		<string>USE animals_db;
+INSERT INTO people (name, has_pet)
+VALUES ("Sean", true);
+SELECT * FROM people</string>
+		<string>USE animals_db;
+INSERT INTO people (name, has_pet);
+VALUES ("Sean", true);
+SELECT * FROM people</string>
+		<string>USE animals_db;
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ("Eric", true, "Echo", 4);
+SELECT * FROM people</string>
+		<string>USE favorite_db;
+CREATE TABLE favorite_foods (
+	food VARCHAR(50) NOT NULL,
+	score INTEGER(10)
+);
+CREATE TABLE favorite_songs (
+	song VARCHAR (100) NOT NULL,
+	artist VARCHAR(50),
+	score INTEGER(10)
+);
+CREATE TABLE favorite_movies (
+	movie VARCHAR (100) NOT NULL,
+	fives_times BOOLEAN DEFAULT false,
+	score INTEGER(10)
+	
+)</string>
+		<string>USE animals_db;
+CREATE TABLE people (
+	name VARCHAR(30) NOT NULL,
+	has_pet BOOLEAN NOT NULL,
+	pet_name VARCHAR(30),
+	pet_age INTEGER(10)
+)</string>
+		<string>USE animals_db;
+CREATE TABLE people (
+	name VARCHAR(30) NOT NULL,
+	has_pet BOOLEAN NOT NULL,
+	pet_name VARCHAR(30), 
+	pet_age INTEGER(10),
+)</string>
+		<string>USE animals_db;
+CREATE TABLE people (
+	name VARCHAR(30) NOT NULL,
+	has_pet BOOLEAN NOT NULL,
+	pet_name VARCHAR (30), 
+	pet_age INTEGER(10),
+)</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.6.35</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
